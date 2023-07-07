@@ -1,0 +1,97 @@
+/*HEADER*/
+
+.header {
+    background-color: var(--colorAmarillo);
+    margin: 0;
+    width: 100vw;
+    text-align: center;
+}
+.header__logo--box {
+    margin: 0 20px;
+    padding: 20px 10px 10px;
+    width: 130px;
+}
+.header--barraBusqueda {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 12px;
+    width: 180px;
+}
+.header--barraBusqueda input {
+    width: 180px;
+    height: 16px;
+}
+.header--barraBusqueda i {
+    background-color: var(--colorGrisClaro);
+    border: solid 1px;
+    margin-top: 1px;
+}
+
+.header--epigraph {
+    margin: 20px 0;
+    color: var(--colorAzul);
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    display: inline-block;
+}
+.header nav ul {
+    padding: 0;
+    text-align: left;
+    font-size: 12px;
+}
+.header nav ul li a{
+    color: var(--colorAzul);
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header--menuHamburguesa {
+    background-color: var(--colorCeleste);
+    padding: 8px;
+    margin: 20px;
+    width: 35px;
+    display: inline-block;
+    color: var(--colorGrisClaro);
+    border-radius: 3px ;
+    align-items: center;
+}
+
+/*MAIN*/
+
+.main img {
+    width: 100vw;
+}
+.main--titulos {
+    font-size: 24px;
+}
+.main--precio {
+    font-size: 18px;
+}
+.main--descuentos {
+    font-size: 16px;
+}
+.main--descripción {
+    font-size: 16px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: white;
+    margin: 5px;
+    padding: 30px 20px;
+}
+.footer p {
+    font-size: 11px;
+}
+.footer__section--article {
+    text-align: center;
+    margin: 30px 20px;
+}
+.footer__section__article--iconBox {
+    width: 2em;
+    margin: auto;
+    margin-bottom: 10px;
+}
