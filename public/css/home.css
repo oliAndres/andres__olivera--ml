@@ -3,13 +3,15 @@
 .header {
     background-color: var(--colorAmarillo);
     margin: 0;
-    width: 100vw;
+    padding: 0 0 20px;
+    width: 100%;
     text-align: center;
 }
 .header__logo--box {
     margin: 0 20px;
     padding: 20px 10px 10px;
-    width: 130px;
+    width: 40%;
+    max-width: 250px;
 }
 .header--barraBusqueda {
     margin-left: 20px;
@@ -18,17 +20,17 @@
     width: 180px;
 }
 .header--barraBusqueda input {
-    width: 180px;
-    height: 16px;
+    width: 160px;
+    height: 16px;  
 }
-.header--barraBusqueda i {
+.header--barraBusqueda a {
     background-color: var(--colorGrisClaro);
     border: solid 1px;
-    margin-top: 1px;
+    margin-top: 1px;   
 }
 
 .header--epigraph {
-    margin: 20px 0;
+    padding: 15px 0 20px;
     color: var(--colorAzul);
     text-align: center;
     font-weight: 500;
@@ -39,6 +41,7 @@
     padding: 0;
     text-align: left;
     font-size: 12px;
+    display: none;
 }
 .header nav ul li a{
     color: var(--colorAzul);
@@ -50,7 +53,6 @@
 .header--menuHamburguesa {
     background-color: var(--colorCeleste);
     padding: 8px;
-    margin: 20px;
     width: 35px;
     display: inline-block;
     color: var(--colorGrisClaro);
@@ -59,12 +61,48 @@
 }
 
 /*MAIN*/
-
-.main img {
+.home__main--section{
+    width: 90%;
+    margin: auto;
+}
+.main__banner--imagen {
     width: 100vw;
+    padding: 0 0 5px;
+}
+.home__main__section--article{
+    margin: 10px 0;
+    height: 100vh;
+    
+    
+}
+.home__main__section--article img {
+    width: 100%;
+    
+}
+.home__main__section__article--box {
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    font-size: 14px;
+    
+}
+.home__main__section__article--box i {
+    padding: 3px 10px 10px 3px;
+    border: 1px solid var(--colorVerde);
+    border-radius: 50px;
+    color: #39b54a;
+}
+.home__main__section__article--box p:nth-child(3) {
+    color: #39b54a;
+}
+.home__main__section__article--box h3{
+    color: var(--colorGrisOscuro);
+    display: none;
 }
 .main--titulos {
-    font-size: 24px;
+    padding: 5px;
+    font-size: 23px;
+    color: var(--colorGrisOscuro);
 }
 .main--precio {
     font-size: 18px;
@@ -79,6 +117,7 @@
 /*FOOTER*/
 
 .footer {
+    width: 100%;
     background-color: white;
     margin: 5px;
     padding: 30px 20px;
@@ -94,4 +133,33 @@
     width: 2em;
     margin: auto;
     margin-bottom: 10px;
+}
+@media(min-width: 481px){
+    
+    /*HEADER*/
+
+   
+    .header--menuHamburguesa {
+        display: none
+    }
+    .header nav ul {
+        padding: 0 15px;
+        display: block;
+    }
+
+    /*MAIN*/
+
+    .home__main__section--article {
+        height: 80%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .home__main__section--article img {
+        height: 60%;
+    }
+    .home__main__section__article--box {
+        height: 10%;
+    }
+}
+@media(min-width:769){
+
 }
