@@ -10,26 +10,27 @@
 </head>
 <body class="home">
     <header class="header">
-        <div class="header__logo--box">
-            <img class="header__logo--imagen" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" >
+        <div class="header__box">
+            <div class="header__logo--box">
+                <img class="header__logo--imagen" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" >
+            </div>
+            <div class="header--barraBusqueda">
+                <input type="text" placeholder="Buscar productos, marcas">        
+                <a href=""><i class="fa fa-search"></i></a>
+            </div>
+            <div class="header__iconoMano--box">
+                <a href=""><i class="fa-solid fa-hand-holding-dollar" style="color: #021d4b;"></i></a>
+                <p class="header--epigraph">Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
         </div>
-        <div class="header--barraBusqueda">
-            <input type="text" placeholder="Buscar productos, marcas">        
-            <a href=""><i class="fa fa-search"></i></a>
-        </div>
-        <div class="header__iconoMano--box">
-            <a href=""><i class="fa-solid fa-hand-holding-dollar" style="color: #021d4b;"></i></a>
-            <p class="header--epigraph">Comprá en cuotas y sin tarjeta de crédito</p>
-        </div>
-        <nav>
-            <ul type="none">
+        <nav class="header--nav">
+            <ul>
                 <li><a href="#ofertas">Ofertas</a></li>
                 <li><a href="">Tiendas Oficiales</a></li>
                 <li><a href="">Vender</a></li>
                 <li><a href="">Ayuda</a></li>
-                
             </ul>
-            <ul class="header__ul--icons" type="none">
+            <ul class="header__nav__ul--icons">
                 <li>
                     <div class="header__ul__icons--box">
                         <a href="">Creá tu cuenta</a>
@@ -137,7 +138,7 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="footer--section">
+        <div class="footer--section">
             <article class="footer__section--article">
                 <div class="footer__section__article--iconBox">
                     <a href=""><i class="fa-solid fa-credit-card" style="color: #0643ac"></i></a>
@@ -163,9 +164,9 @@
                 porque estás siempre protegid@.</p>
             </article>
             <article>
-                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+                <h6>Copyright © 1999-2020 MercadoLiebre S.R.L.</h6>
             </article>
-        </section>
+        </div>
     </footer>
     
 </body>

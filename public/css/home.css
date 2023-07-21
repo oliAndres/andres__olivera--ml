@@ -7,43 +7,68 @@
     width: 100%;
     text-align: center;
 }
+.header__box {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .header__logo--box {
-    margin: 0 20px;
     padding: 20px 10px 10px;
-    width: 40%;
+    width: 50%;
     max-width: 250px;
+    
 }
 .header--barraBusqueda {
-    margin-left: 20px;
     text-align: left;
     font-size: 12px;
-    width: 180px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 .header--barraBusqueda input {
-    width: 160px;
-    height: 16px;  
+    width: 100%;
+    height: 27px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
 }
 .header--barraBusqueda a {
-    background-color: var(--colorGrisClaro);
-    border: solid 1px;
-    margin-top: 1px;   
+    background-color: white;
+    color: var(--colorGrisOscuro);
+    margin: 1px 3px;
+    padding: 3px;
+    width: 10%;
+    height: 15px;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    border: none;
 }
-
+.header__iconoMano--box {
+    display: flex;
+    align-items: center;
+}
+.header__iconoMano--box a {
+    text-align: right;
+}
 .header--epigraph {
     padding: 15px 0 20px;
     color: var(--colorAzul);
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     font-size: 12px;
-    display: inline-block;
+    
 }
-.header nav ul {
+.header--nav ul {
     padding: 0;
     text-align: left;
     font-size: 12px;
     display: none;
+    list-style: none;
 }
-.header nav ul li a{
+.header--nav ul li a{
     color: var(--colorAzul);
     text-align: left;
     text-decoration: none;
@@ -64,6 +89,15 @@
 .home__main--section{
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.main--titulos {
+    padding: 5px;
+    font-size: 23px;
+    color: var(--colorGrisOscuro);
 }
 .main__banner--imagen {
     width: 100vw;
@@ -71,9 +105,7 @@
 }
 .home__main__section--article{
     margin: 10px 0;
-    height: 100vh;
-    
-    
+    align-self: stretch;
 }
 .home__main__section--article img {
     width: 100%;
@@ -81,37 +113,48 @@
 }
 .home__main__section__article--box {
     background-color: white;
-    border-top: 1px solid #ebebeb;
+    border-top: 1 solid #ebebeb;
     padding: 15px;
     font-size: 14px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 .home__main__section__article--box i {
-    padding: 3px 10px 10px 3px;
-    border: 1px solid var(--colorVerde);
-    border-radius: 50px;
-    color: #39b54a;
-}
-.home__main__section__article--box p:nth-child(3) {
-    color: #39b54a;
-}
-.home__main__section__article--box h3{
-    color: var(--colorGrisOscuro);
-    display: none;
-}
-.main--titulos {
+    display: block;
+    font-size: 16px;
     padding: 5px;
-    font-size: 23px;
-    color: var(--colorGrisOscuro);
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--colorVerde);
+    background-color: #fff;
+    border-radius: 50%;
+    color: var(--colorVerde);
+    position: absolute;
+    right: 20px;
+    top: -14px;
 }
 .main--precio {
+    width: 30%;
     font-size: 18px;
+    text-align: center;
+    
 }
-.main--descuentos {
+.main--descuento {
+    width: 70%;
+    padding-left: 10px;
     font-size: 16px;
+    color: var(--colorVerde);
+    
 }
 .main--descripción {
+    width: 100%;
     font-size: 16px;
+    text-align: left;
+    color: var(--colorGrisOscuro);
+    padding-top: 20px;
+    
 }
 
 /*FOOTER*/
@@ -134,22 +177,86 @@
     margin: auto;
     margin-bottom: 10px;
 }
+
 @media(min-width: 481px){
     
     /*HEADER*/
-
-   
-    .header--menuHamburguesa {
-        display: none
+    .header {
+        padding: 0;
     }
-    .header nav ul {
-        padding: 0 15px;
-        display: block;
+    .header__box {
+        justify-content: space-between;
+        padding: 0;
+    }
+    .header__logo--box {
+        margin: 0;
+        width: 33%;
+    }
+    .header--barraBusqueda {
+        font-size: 10px;
+        width: 25%;
+        max-width: 150px;
+    }
+    .header--barraBusqueda input {
+        height: 12px;
+        padding: 2px;
+        border-radius: 4px 0 0 4px;
+        box-shadow: 0 0 2px;
+       
+    }
+    .header--barraBusqueda a {
+        background-color: var(--colorGrisClaro);
+        width: 12px;
+        height: 12px;
+        border: solid 1px;
+        font-size: 8px;
+        font-weight: bold;
+        padding: 1px;
+        position: relative;
+    }
+    .header__iconoMano--box {
+        width: 40%;
+        
+    }
+    .header__iconoMano--box a {
+        width: 10%;
+        font-size: 9px;
+        position: relative;
+    }
+    .header--epigraph {
+        width: 90%;
+        font-size: 9px;
+        padding: 0;
+    }
+    .header--menuHamburguesa {
+        display: none;
+    }
+    .header--nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header--nav ul {
+        padding: 10px;
+        display: flex;
+        width: 42%;
+        font-size: 9px;
+        gap: 3px;
+    }
+    .header__nav__ul--icons {
+        justify-content: right;
     }
 
     /*MAIN*/
 
+    .home__main--section{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main--titulos {
+        width: 100%;
+    }
     .home__main__section--article {
+        width: 45%;
         height: 80%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -159,7 +266,37 @@
     .home__main__section__article--box {
         height: 10%;
     }
+    .main--precio {
+        width: 50%;
+        text-align: left;
+        
+    }
+    .main--descuento {
+        width: 50%;   
+    }
 }
-@media(min-width:769){
+@media(min-width: 520px){
+    .header--nav ul {
+        gap: 10px;
+    }
+}
+@media(min-width: 769px){
 
+    /*HEADER*/
+
+    .header--nav ul {
+        padding: 15px;
+    }
+
+    /*FOOTHER*/
+
+    .header--barraBusqueda input{
+        border-radius: 0;
+    }
+
+    /*MAIN*/
+
+   .home__main__section--article {
+    width: 20%;
+   }
 }
