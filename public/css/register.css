@@ -1,0 +1,149 @@
+.register--main {
+    box-sizing: border-box;
+    background-color: var(--colorGrisClaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register__main--box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
+    width: 90%;
+    max-width: 536px;
+    background-color: white;
+    border-radius: 10px;
+}
+.register__main__box--title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 10px;
+}
+.register__main__box--formbox {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.register__main__box__formbox--form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.register__main__box__formbox__form--box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.register__main__box__formbox__form--box:hover {
+    box-shadow: 5px 5px 11px silver;
+}
+.register__main__box__formbox__form__box--i {
+    padding: 5px;
+    width: 30px;
+    color: #3483fa;
+    border: 1px solid silver;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.register__main__box__formbox--campobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.register__main__box__formbox--campobox label{
+    display: none;
+}
+.register__main__box__formbox--campobox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.register__main__box__formbox--campobox3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.register__main__box__formbox--campobox3 label{
+    padding: 5px;
+}
+.register__main__box__formbox--campobox label {
+    padding: 5px;
+}
+.register__main__box__formbox--campo {
+    padding: 5px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.register__main__box__formbox--campo:focus {
+    border: 1px solid #2968c8;
+    box-shadow: 5px 5px 11px silver;
+}
+.register__form--buttonbox {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 10px;
+}
+.register__form__buttonbox--button {
+    background-color: #3483FA;
+    font-weight: bold;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.register__form__buttonbox--button:hover {
+    box-shadow: 5px 5px 11px silver;
+}
+.register__form__buttonbox--button:focus {
+    background-color: #2968c8;
+}
+.register__form__buttonbox--button2 {
+    background-color: white;
+    font-weight: bold;
+    color: #3483FA;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.register__form__buttonbox--button2:hover {
+    box-shadow: 5px 5px 11px silver;
+}
+.register__form__buttonbox--button2:focus {
+    background-color: var(--colorGrisClaro);
+}
+
+@media(min-width: 481px){
+    .register__main--box {
+        margin: 30px 0 50px;
+        padding: 48px 48px 0;
+        
+    }
+    .register__main__box__formbox--campobox label{
+        display: block;
+    }
+}
+
+@media(min-width: 769px){
+    .register__main--box {
+        margin: 50px 0 77px;
+        border-radius: 20px;
+    }
+    .register__main__box--formbox {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="https://kit.fontawesome.com/2b30b879ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__box">
+            <div class="header__logo--box">
+                <a href="/">
+                <img class="header__logo--imagen" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" >
+                </a>
+            </div>
+            <div class="header--barraBusqueda">
+                <input type="text" placeholder="Buscar productos, marcas">        
+                <a href=""><i class="fa fa-search"></i></a>
+            </div>
+            <div class="header__iconoMano--box">
+                <a href=""><i class="fa-solid fa-hand-holding-dollar" style="color: #021d4b;"></i></a>
+                <p class="header--epigraph">Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+        <nav class="header--nav">
+            <ul>
+                <li><a href="/#ofertas">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="header__nav__ul--icons">
+                <li>
+                    <div class="header__ul__icons--box">
+                        <a href="/register">Creá tu cuenta</a>
+                        <a href="/register"><i class="fa-regular fa-id-card"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__ul__icons--box">    
+                        <a href="/login">Ingresá</a>
+                        <a href="/login"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__ul__icons--box">
+                        <a href="/login">Mis compras</a>
+                        <a href="/login"><i class="fa-sharp fa-solid fa-basket-shopping"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+            <a href="" class="header--menuHamburguesa"><i class="fas fa-bars"></i></a>
+    </header>
+    <main class="register--main">
+        <div class="register__main--box">
+            <div class="register__main__box--title">
+                <h2>Completá los datos para crear tu cuenta</h2>
+            </div>
+            <div class="register__main__box--formbox">
+                <form class="register__main__box__formbox--form" action="/registerOk" method="get">
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox__form__box--i">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <div class="register__main__box__formbox--campobox">
+                            <label for="name">Agregá tu nombre y apellido</label>
+                            <input class="register__main__box__formbox--campo" type="text" name="name" id="name" placeholder="Nombre Y apellido"  required>
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox__form__box--i">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="register__main__box__formbox--campobox">
+                            <label for="nombre-usuario">Elegí un nombre</label>
+                            <input class="register__main__box__formbox--campo" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario" required>
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox--campobox3">
+                            <label for="fechaNacimiento">Fecha de nacimiento</label>
+                            <input class="register__main__box__formbox--campo" type="date" name="fechaNacimiento" id="fechaNacimiento">
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox__form__box--i">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="register__main__box__formbox--campobox">
+                            <label for="address">Indicanos tu domicilio</label>
+                            <input class="register__main__box__formbox--campo" type="text" name="address" id="address" placeholder="Domicilio 1234" required>
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box"> 
+                        <div class="register__main__box__formbox--campobox2">
+                            <label for="perfil">Perfil de usuario:</label>
+                            <label for="perfil">
+                                <input type="radio" name="perfil" id="perfil" value="comprar">Comprar
+                            </label>
+                            <label for="perfil">
+                                <input type="radio" name="perfil" id="perfil" value="vender">Vender
+                            </label>
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox--campobox2">
+                            <label for="interes">Categorías de interés:</label>
+                            <label for="interes"><input type="checkbox" name="interes" id="interes" value="electro">Electro</label>
+                            <label for="interes"><input type="checkbox" name="interes" id="interes" value="moda">Moda</label>
+                            <label for="interes"><input type="checkbox" name="interes" id="interes" value="hogar">Hogar</label>
+                            <label for="interes"><input type="checkbox" name="interes" id="interes" value="jugueteria">Juguetería</label>
+                            <label for="interes"><input type="checkbox" name="interes" id="interes" value="vida sana">Vida Sana</label>
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox__form__box--i">
+                            <i class="fa-solid fa-camera-retro"></i>    
+                        </div>
+                        <div class="register__main__box__formbox--campobox2">
+                            <label for="fotoUsuario">Subí una foto tuya</label>
+                            <input type="file" name="fotoUsuario" id="fotoUsuario" accept=".png, .jpg" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox__form__box--i">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>    
+                        <div class="register__main__box__formbox--campobox">
+                            <label for="email">Agregá tu e-mail</label>
+                            <input class="register__main__box__formbox--campo" type="email" name="email" id="email" placeholder="E-mail" required>
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox--campobox3">
+                            <label for="password">Creá tu contraseña</label>
+                            <input class="register__main__box__formbox--campo" type="password" name="password" id="password" placeholder="Contraseña" required>
+                        </div>
+                    </div>
+                    <div class="register__main__box__formbox__form--box">
+                        <div class="register__main__box__formbox--campobox3">
+                            <label for="password2">Repetí tu contraseña</label>
+                            <input class="register__main__box__formbox--campo" type="password" name="password2" id="password2" placeholder="Confirmar contraseña" required>
+                        </div>
+                    </div>
+                    <div class="register__form--buttonbox">
+                        
+                        <button class="register__form__buttonbox--button" type="submit" style="cursor: pointer;">Enviar</button>
+                        
+                        <button class="register__form__buttonbox--button2" type="reset" style="cursor: pointer;">Borrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

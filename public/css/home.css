@@ -33,7 +33,13 @@
     padding: 5px;
     border: none;
     border-radius: 5px;
+    outline: none;
 }
+.header--barraBusqueda input:focus {
+    border: 1px solid var(--colorCeleste);
+}
+
+
 .header--barraBusqueda a {
     background-color: white;
     color: var(--colorGrisOscuro);
@@ -61,20 +67,6 @@
     font-size: 12px;
     
 }
-.header--nav ul {
-    padding: 0;
-    text-align: left;
-    font-size: 12px;
-    display: none;
-    list-style: none;
-}
-.header--nav ul li a{
-    color: var(--colorAzul);
-    text-align: left;
-    text-decoration: none;
-    font-weight: 500;
-}
-
 .header--menuHamburguesa {
     background-color: var(--colorCeleste);
     padding: 8px;
@@ -84,6 +76,28 @@
     border-radius: 3px ;
     align-items: center;
 }
+.header--nav {
+    height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    text-align: left;
+    font-size: 12px;
+    
+    transition: all 2s ease;
+}
+.header--nav ul {
+    list-style: none;
+}
+.showMenu {
+    height: auto;
+}
+.header--nav ul li a{
+    color: var(--colorAzul);
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 
 /*MAIN*/
 .home__main--section{
@@ -118,7 +132,10 @@
     font-size: 14px;
     position: relative;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 1px;
     
 }
 .home__main__section__article--box i {
@@ -135,6 +152,25 @@
     right: 20px;
     top: -14px;
 }
+.home__main__section__article--box i:hover {
+    animation: rotate 1s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+.home__main__section__article--box h3 {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.home__main__section--article:hover h3{
+    height: 40px;
+}
 .main--precio {
     width: 30%;
     font-size: 18px;
@@ -142,7 +178,7 @@
     
 }
 .main--descuento {
-    width: 70%;
+    width: 30%;
     padding-left: 10px;
     font-size: 16px;
     color: var(--colorVerde);
@@ -172,10 +208,14 @@
     text-align: center;
     margin: 30px 20px;
 }
-.footer__section__article--iconBox {
+.footer__section__article--iconBox i{
     width: 2em;
     margin: auto;
     margin-bottom: 10px;
+    color: #0643ac;
+}
+.footer__section__article--iconBox i:hover {
+    color: var(--colorGrisOscuro);
 }
 
 @media(min-width: 481px){
@@ -193,26 +233,11 @@
         width: 33%;
     }
     .header--barraBusqueda {
-        font-size: 10px;
         width: 25%;
-        max-width: 150px;
     }
-    .header--barraBusqueda input {
-        height: 12px;
-        padding: 2px;
-        border-radius: 4px 0 0 4px;
-        box-shadow: 0 0 2px;
-       
-    }
-    .header--barraBusqueda a {
-        background-color: var(--colorGrisClaro);
-        width: 12px;
-        height: 12px;
-        border: solid 1px;
-        font-size: 8px;
-        font-weight: bold;
-        padding: 1px;
-        position: relative;
+    .header--barraBusqueda a {  
+        padding: 3px 15px 3px 5px;
+        border-left: 1px solid var(--colorGrisClaro);
     }
     .header__iconoMano--box {
         width: 40%;
@@ -232,15 +257,16 @@
         display: none;
     }
     .header--nav {
+        height: auto;
         display: flex;
-        justify-content: space-between;
+        
     }
     .header--nav ul {
         padding: 10px;
         display: flex;
-        width: 42%;
+        width: 50%;
         font-size: 9px;
-        gap: 3px;
+        gap: 10px;
     }
     .header__nav__ul--icons {
         justify-content: right;
@@ -258,6 +284,9 @@
     .home__main__section--article {
         width: 45%;
         height: 80%;
+        transition: all 1s ease;
+    }
+    .home__main__section--article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .home__main__section--article img {
@@ -267,31 +296,28 @@
         height: 10%;
     }
     .main--precio {
-        width: 50%;
+        width: 40%;
         text-align: left;
         
     }
     .main--descuento {
-        width: 50%;   
+        width: 40%;   
     }
-}
-@media(min-width: 520px){
-    .header--nav ul {
-        gap: 10px;
-    }
+
 }
 @media(min-width: 769px){
 
-    /*HEADER*/
+    /* HEADER */
 
+    .header__iconoMano--box a {
+        font-size: 12px;
+    }
+    .header__iconoMano--box p {
+        font-size: 12px;
+    }
     .header--nav ul {
         padding: 15px;
-    }
-
-    /*FOOTHER*/
-
-    .header--barraBusqueda input{
-        border-radius: 0;
+        font-size: 12px;
     }
 
     /*MAIN*/
@@ -299,4 +325,47 @@
    .home__main__section--article {
     width: 20%;
    }
+   
+   /* footer */
+
+    .footer--section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer__section--article {
+        width: 25%;
+    }
+    .footer__section__article--copyright {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1024px){
+    
+    /*HEADER*/
+
+    .header--barraBusqueda {
+        width: 35%;
+    }
+    .header--barraBusqueda input{
+        height: 40px;
+        border-radius: 0;
+        font-size: 16px;
+        padding: 15px;
+    }
+    .header--barraBusqueda a {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .header__iconoMano--box a {
+        font-size: 14px;
+    }
+    .header__iconoMano--box p {
+        font-size: 14px;
+    }
+    .header--nav ul {
+        font-size: 14px;
+    }   
 }

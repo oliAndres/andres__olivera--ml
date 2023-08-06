@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <script src="https://kit.fontawesome.com/2b30b879ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__box">
+            <div class="header__logo--box">
+                <a href="/">
+                    <img class="header__logo--imagen" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" >
+                </a>
+            </div>
+            <div class="header--barraBusqueda">
+                <input type="text" placeholder="Buscar productos, marcas">        
+                <a href=""><i class="fa fa-search"></i></a>
+            </div>
+            <div class="header__iconoMano--box">
+                <a href=""><i class="fa-solid fa-hand-holding-dollar" style="color: #021d4b;"></i></a>
+                <p class="header--epigraph">Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+        <nav class="header--nav">
+            <ul>
+                <li><a href="/#ofertas">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="header__nav__ul--icons">
+                <li>
+                    <div class="header__ul__icons--box">
+                        <a href="/register">Creá tu cuenta</a>
+                        <a href="/register"><i class="fa-regular fa-id-card"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__ul__icons--box">    
+                        <a href="/login">Ingresá</a>
+                        <a href="/login"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__ul__icons--box">
+                        <a href="">Mis compras</a>
+                        <a href=""><i class="fa-sharp fa-solid fa-basket-shopping"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+            <a href="" class="header--menuHamburguesa"><i class="fas fa-bars"></i></a>
+    </header>
+    <main class="login--main">
+        <div class="login__main--box">
+            <div class="login__main__box--title">
+                <h2>Inicia sesión</h2>
+            </div>
+            <div class="login__main__box--formbox">
+                <form class="login__main__box__formbox--form" action="/" method="get">
+                    <div class="login__main__box__formbox__form--box">
+                        <div class="login__main__box__formbox__form__box--i">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="login__main__box__formbox--campobox">
+                            <label for="nombre-usuario">Ingresá tu nombre de usuario</label>
+                            <input class="login__main__box__formbox--campo" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario" required>
+                        </div>
+                    </div>
+                    <div class="login__main__box__formbox__form--box">
+                        <div class="login__main__box__formbox__form__box--i">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="login__main__box__formbox--campobox">
+                            <label for="password">Ingresá tu contraseña</label>
+                            <input class="login__main__box__formbox--campo" type="password" name="password" id="password" placeholder="Contraseña" required>
+                        </div>
+                    </div>
+                    <div class="login__form--buttonbox">
+                            <button class="login__form__buttonbox--button" type="submit" style="cursor: pointer;">Continuar</button>
+                            <a href="/register"><button class="login__form__buttonbox--button2" type="button" style="cursor: pointer;">Crear cuenta</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

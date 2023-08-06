@@ -12,7 +12,9 @@
     <header class="header">
         <div class="header__box">
             <div class="header__logo--box">
+                <a href="/">
                 <img class="header__logo--imagen" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" >
+                </a>
             </div>
             <div class="header--barraBusqueda">
                 <input type="text" placeholder="Buscar productos, marcas">        
@@ -22,6 +24,9 @@
                 <a href=""><i class="fa-solid fa-hand-holding-dollar" style="color: #021d4b;"></i></a>
                 <p class="header--epigraph">Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
+        </div>
+        <div>
+            <button class="header--menuHamburguesa" onclick="document.querySelector('.header--nav').classList.toggle('showMenu')"><i class="fas fa-bars"></i></button>
         </div>
         <nav class="header--nav">
             <ul>
@@ -33,26 +38,26 @@
             <ul class="header__nav__ul--icons">
                 <li>
                     <div class="header__ul__icons--box">
-                        <a href="">Creá tu cuenta</a>
-                        <a href=""><i class="fa-regular fa-id-card"></i></a>
+                        <a href="/register">Creá tu cuenta</a>
+                        <a href="/register"><i class="fa-regular fa-id-card"></i></a>
                     </div>
                 </li>
                 <li>
                     <div class="header__ul__icons--box">    
-                        <a href="">Ingresá</a>
-                        <a href=""><i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a href="/login">Ingresá</a>
+                        <a href="/login"><i class="fa-solid fa-right-to-bracket"></i></a>
                     </div>
                 </li>
                 <li>
                     <div class="header__ul__icons--box">
-                        <a href="">Mis compras</a>
-                        <a href=""><i class="fa-sharp fa-solid fa-basket-shopping"></i></a>
+                        <a href="/login">Mis compras</a>
+                        <a href="/login"><i class="fa-sharp fa-solid fa-basket-shopping"></i></a>
                     </div>
                 </li>
             </ul>
         </nav>
-            <a href="" class="header--menuHamburguesa"><i class="fas fa-bars"></i></a>
-    </header>
+        
+        </header>
     <main class="main">
             <div class="main__banner--box">
             <img class="main__banner--imagen" src="/images/img-home-banner.jpg" alt="imagen-home-banner">
@@ -98,7 +103,7 @@
             </article>
         </section>
         <section class="home__main--section">
-            <h3 class="main--titulos">Ofertas</h3>
+            <h3 id="ofertas" class="main--titulos">Ofertas</h3>
             <article class="home__main__section--article">
                 <img src="/images/img-cafetera-moulinex.jpg" alt="imagen-cafetera-moulinex" >
                 <div class="home__main__section__article--box">
@@ -141,7 +146,7 @@
         <div class="footer--section">
             <article class="footer__section--article">
                 <div class="footer__section__article--iconBox">
-                    <a href=""><i class="fa-solid fa-credit-card" style="color: #0643ac"></i></a>
+                    <i class="fa-solid fa-credit-card"></i>
                 </div>
                 <h5>Pagá con tarjeta o en efectivo</h5>
                 <p class="">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
@@ -149,7 +154,7 @@
             </article>
             <article class="footer__section--article">
                 <div class="footer__section__article--iconBox">
-                    <a href=""><i class="fa-solid fa-gift" style="color: #0643ac"></i></a>
+                    <i class="fa-solid fa-gift"></i>
                 </div>
                 <h5>Envío gratis desde $ 2.500</h5>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
@@ -157,13 +162,13 @@
             </article>
             <article class="footer__section--article">
                 <div class="footer__section__article--iconBox">
-                    <a href=""><i class="fa-solid fa-user-shield" style="color: #0643ac"></i></a>
+                    <i class="fa-solid fa-user-shield"></i>
                 </div>
                 <h5>Seguridad, de principio a fin</h5>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegid@.</p>
             </article>
-            <article>
+            <article class="footer__section__article--copyright">
                 <h6>Copyright © 1999-2020 MercadoLiebre S.R.L.</h6>
             </article>
         </div>

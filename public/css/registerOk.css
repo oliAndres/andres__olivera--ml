@@ -1,0 +1,60 @@
+.registerOk--main {
+    box-sizing: border-box;
+    background-color: var(--colorGrisClaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.registerOk__main--box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 45px 0 150px;
+    padding: 20px 10px;
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+.registerOk__main__box--title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 10px;
+    padding: 20px 0 10px;
+}
+.registerOk__form--buttonbox {
+    font-weight: bold;
+    color: white;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.registerOk__form__buttonbox--button {
+    background-color: #3483FA;
+    font-weight: bold;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.registerOk__form__buttonbox--button:hover {
+    box-shadow: 5px 5px 11px silver;
+}
+.registerOk__form__buttonbox--button:focus {
+    background-color: #2968c8;
+}
+
+@media(min-width: 481px){
+    .registerOk__main--box {
+        margin: 45px 0 210px;
+    }   
+}
+@media(min-width: 759px){
+    .registerOk__main--box {
+        margin: 45px 0 340px;
+    }   
+}
